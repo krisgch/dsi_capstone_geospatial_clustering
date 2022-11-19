@@ -90,8 +90,19 @@ This method allows GeoPulse to expand their businesses to new partners without h
 <br>
 
 
-**Conclusion**
-![approach](image/conclusion.png)
+**Conclusion** <br>
+
+- Extremely limited data requires thinking outside the box to work around (i.e. binning)
+
+- **KMeans Clustering** to look for new opportunities
+
+- Results from optimized clusters were fed into a **Random Forest Classification** to verify and identify important features
+
+- This approach verified that our current demographics data can be used to label grids <br>
+(**Note:** with actual data the density of each segments during any hours can be used to classify grids more accurately, and other grid types could be identified)
+
+- Labeling grids allow GeoPulse to **expand to new business partners without having to invest** in obtaining more data
+
 
 **Note that with actual dataset, the grid types and density could be verified much more accurately and diversely.**
 
