@@ -1,10 +1,11 @@
 # DSI CAPSTONE - Geospatial Clustering to label grids
 
 ## Table of Content
-[1. Executive Summary](#Executive-Summary) <br>
-[2. Data Dictionary](#Data-Dictionary) <br>
-[3. Repository Structure](#Repository-Structure) <br>
-[4. File Description](#File-Description)
+[1. Abstract](#Abstract) <br>
+[2. Summary](#Summary) <br>
+[3. Data Dictionary](#Data-Dictionary) <br>
+[4. Repository Structure](#Repository-Structure) <br>
+[5. File Description](#File-Description)
 
 ---
 
@@ -16,7 +17,7 @@ With this remaining data, I use unsupervised learning methods, **KMeans clusteri
 
 This kind of labeling allows True Analytics to potentially work with new customers by leveraging the already collected data to create new products without having to invest further in more data collection. New business partners may be logistic company looking to utilize their branches more efficiently or open new branch, might want to look for area of high density residential or high density community as they will be where logistic company send their packages to.
 
-Note that with actual dataset, the labeling can be done in a much more efficient way and much more effectively. The possibility of business expansion without investment is defnitely intriguing.
+Note that with actual dataset, the labeling can be done in a much more efficient way and much more effectively. **The possibility of business expansion without investment is defnitely intriguing.**
 
 ---
 
