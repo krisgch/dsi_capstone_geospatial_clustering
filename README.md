@@ -8,9 +8,25 @@
 
 ---
 
-## Executive Summary
+## Abstract
 
-**GeoPulse** is a smart platform utilizing locational data, mobility data, internet data, and other sources combining them into a product specialises in analysing customer's persona within a specific area (referred to as grid) at a specific time. Currently **GeoPulse** has various use case in many industries that looks to utilize customer persona information such as businesses looking to open/close their branches, marketing strategy planning based on customer persona at each location, and foot traffic comparison for dynamic pricing of media products.
+I was fortunate to be given the opportunity to work with a realworld dataset extracted from **True Analytic's** product called **GeoPulse**. This product specialises in customer persona based on location/time. For security reason, the dataset was greatly redacted that only 1% of the possible data was available. <br>
+
+With this remaining data, I use unsupervised learning methods, **KMeans clustering**, to cluster up different customer segments based on population density with the aim of discovering new business opportunities. The results was then verified by feeding the labeled data into a **Random Forest Classifier**. Finally, the insights from each clusters allowed each cluster to be relabeled based on population density and location types. <br>
+
+This kind of labeling allows True Analytics to potentially work with new customers by leveraging the already collected data to create new products without having to invest further in more data collection. New business partners may be logistic company looking to utilize their branches more efficiently or open new branch, might want to look for area of high density residential or high density community as they will be where logistic company send their packages to.
+
+Note that with actual dataset, the labeling can be done in a much more efficient way and much more effectively. The possibility of business expansion without investment is defnitely intriguing.
+
+---
+
+## Summary
+
+**GeoPulse** is a smart platform utilizing locational data, mobility data, internet data, and other sources combining them into a product specialises in analysing customer's persona within a specific area (referred to as grid) at a specific time. Currently **GeoPulse** has various use case in many industries that looks to utilize customer persona information such as businesses looking to open/close their branches, marketing strategy planning based on customer persona at each location, and foot traffic comparison for dynamic pricing of media products. <br>
+
+
+![Drag Racing](image/geopulse_product.png)
+![Drag Racing](image/geopulse_map.png)
 
 The approach taken in this project was different from a typical Data Science project as show below: <br>
 
@@ -20,6 +36,10 @@ The approach taken in this project was different from a typical Data Science pro
 4. Model to explore
 5. Evaluate to verify
 6. Conclude on business opportunities
+
+![approach](image/approach.png)
+<br>
+
 
 Upon exploring the data there are a few limitations as listed below: <br>
 1. Encoded area code makes locating grids relative to each other impossible
@@ -31,6 +51,8 @@ Leaving us with approximately 1% of the available data.
 Data was prepared by binning the data set into 4 subsets separated by customer segments (worker, visitor, resident, work at home).
 
 Unsupervised learning model used in this project is KMeans where the optimial number of clusters, identified by 'elbow method' and 'silhouette coefficients', is 4 for all segments.
+
+![approach](image/optimum_clusters.png)
 
 Each segments were then clustered and label, and those labels were used as a target for Random Forest Classifier to verify how well the clusters are separated as well as identify the most important feature ('Population Density').
 
@@ -50,15 +72,27 @@ Cluster Type: <br>
 - Community_office : Worker approximately the same during morning and work time
 - Public : Visitors during all hours (Note: at medium or high density)
 - Others : Visitors during all hours (but low density level)
+<br>
+
+
+![approach](image/evaluate_clusters.png)
+![approach](image/potential_use.png)
+
+<br>
 
 This method allows GeoPulse to expand their businesses to new partners without having to invest further into new data collection. Potential uses are: <br>
 - Logistic company wanting to improve the delivery time by optimizing their offline branches/warehouses, and ultimately improving their customer satisfaction <br>
 "Identify high density residential and community area"
 
 - Dynamic pricing based on location and grid types <br>
-"Different prices for worker-oriented accomodations around high density office area"
+"Different prices for worker-oriented accomodations around high density office area" 
+<br>
 
-Note that with actual dataset, the grid types and density could be verified much more accurately and diversely.
+
+**Conclusion**
+![approach](image/conclusion.png)
+
+**Note that with actual dataset, the grid types and density could be verified much more accurately and diversely.**
 
 ---
 
