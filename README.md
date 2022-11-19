@@ -51,6 +51,15 @@ Cluster Type: <br>
 - Public : Visitors during all hours (Note: at medium or high density)
 - Others : Visitors during all hours (but low density level)
 
+This method allows GeoPulse to expand their businesses to new partners without having to invest further into new data collection. Potential uses are: <br>
+- Logistic company wanting to improve the delivery time by optimizing their offline branches/warehouses, and ultimately improving their customer satisfaction <br>
+"Identify high density residential and community area"
+
+- Dynamic pricing based on location and grid types <br>
+"Different prices for worker-oriented accomodations around high density office area"
+
+Note that with actual dataset, the grid types and density could be verified much more accurately and diversely.
+
 ---
 
 ## Data Dictionary
